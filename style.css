@@ -24,19 +24,18 @@
         font-family: "TTLakes", "Arial", sans-serif;
         font-style: normal;
         font-weight: 400;
-        margin:0;
+        margin: 0;
         padding: 0px;
     }
 
     .burger-menu {
-        width:320px;
+        width: 320px;
         margin: 0px;
         padding: 0px;
         box-shadow: 0 0px 30px 2px grey;
     }
     
     /* Хэдер*/
-   
     
     .burger-menu__header {
         display: flex;
@@ -79,8 +78,8 @@
         
     .burger-menu__nav-item {
         display: flex;
-        margin:0;
-        height:56px;
+        margin: 0;
+        height: 56px;
     }
     
     .burger-menu__nav-item-button {
@@ -97,11 +96,11 @@
         text-decoration: none;
     }
 
-    .burger-menu__nav-item_active {
+    .burger-menu__nav-item--active {
         color: #7e7e82;
     }
     
-    .burger-menu__nav-item_active::before {
+    .burger-menu__nav-item--active::before {
         content: "";
         display: inline-block;
         background-color: #41F6D7;
@@ -116,12 +115,12 @@
 
   /*Футтер*/
   .burger-menu__footer-buttons {
-    margin-left:24px;
+    margin-left: 24px;
   }
 
   .burger-menu__footer-button { 
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     padding: 0;
@@ -157,7 +156,7 @@
     cursor: pointer;
 }
 
-.burger-menu__footer-lang-item_active .burger-menu__footer-lang-button {
+.burger-menu__footer-lang-item--active .burger-menu__footer-lang-button {
     color: #7e7e82; }
 
 .burger-menu__footer-lang-item:hover .burger-menu__footer-lang-button {
@@ -183,10 +182,6 @@ button {
     line-height: 150%;
     letter-spacing: -0.01em;
     margin-top: 16px;
-}
-
-.burger-menu__footer-lang-item_active {
-    color: #7e7e82;
 }
 
 .burger-menu__header button:hover {
