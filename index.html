@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продвинутая стилизация</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+    <aside class="burger-menu">
+    <section class="burger-menu__container" id="burger-menu">
+        <div class="burger-menu__header">
+          <div class="header__buttons-wrapper header__buttons-wrapper_right">
+            <button class="header__button header__button_close" id="burger-close-button">
+              <img class="header__image" src="./img/burger_close.svg" alt="close menu">
+            </button>
+            <div class="header__button-logo">
+              <img class="header__logo" src="./img/Group.svg" alt="logo company">
+            </div>
+          </div>
+          <div class="header__buttons-wrapper header__buttons-wrapper_left">
+            <button class="header__button">
+              <img class="header__image" src="./img/search.svg" alt="search">
+            </button>
+          </div>
+        </div>
+
+        <nav class="burger-menu__nav">
+          <ul class="burger-menu__nav-items">
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button burger-menu__nav-item_active" href="#">Ремонт техники</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Услуги и сервисы
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Корпоративным клиент
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Продавцам техники
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">Партнерам</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">Производителям</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Наши сервисные центры
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="burger-menu__footer">
+          <div class="burger-menu__footer-buttons">
+            <button class="burger-menu__footer-button" id="phone-menu__button-open-modal">
+              <img src="./img/call.svg" alt="" class="burger-menu__footer-button-icon">
+            </button>
+            <button class="burger-menu__footer-button" id="feedback-menu__button-open-modal">
+              <img src="./img/chat.svg" alt="" class="burger-menu__footer-button-icon">
+            </button>
+            <button class="burger-menu__footer-button">
+              <img src="./img/profile.svg" alt="" class="burger-menu__footer-button-icon">
+            </button>
+          </div>
+          <a src="#" class="burger-menu__footer-email">mail@cps.com</a>
+          <a src="tel:#" class="burger-menu__footer-phone">8 800 890 8900</a>
+          <ul class="burger-menu__footer-lang-items">
+            <li class="burger-menu__footer-lang-item burger-menu__footer-lang-item_active">
+              <button class="burger-menu__footer-lang-button"> RU </button>
+            </li>
+            <li class="burger-menu__footer-lang-item">
+              <button class="burger-menu__footer-lang-button">EN</button>
+            </li>
+            <li class="burger-menu__footer-lang-item">
+              <button class="burger-menu__footer-lang-button">CH</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+</body>
+</html>

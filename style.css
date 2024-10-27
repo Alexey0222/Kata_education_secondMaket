@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url(fonts/TTLakes-Bold.eot) format("eot"), url(fonts/TTLakes-Bold.woff) format("woff"), url(fonts/TTLakes-Bold.ttf) format("truetype");
+    font-weight: 700; }
+  
+  @font-face {
+    font-family: 'TTLakes';
+    src: url(fonts/TTLakes-MediumItalic.eot) format("eot"), url(fonts/TTLakes-Medium.woff) format("woff"), url(fonts/TTLakes-Medium.ttf) format("truetype");
+    font-weight: 500; }
+  
+  @font-face {
+    font-family: 'TTLakes';
+    src: url(fonts/TTLakes-Regular.eot) format("eot"), url(fonts/TTLakes-Regular.woff) format("woff"), url(fonts/TTLakes-Regular.woff) format("truetype");
+    font-weight: 400; }
+
+    html {
+        box-sizing: border-box;
+        }
+        *,*:before,*:after {
+            box-sizing: border-box; }
+
+       /* Ширина экрана 320*/
+       body {
+        font-family: "TTLakes", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin:0;
+        padding: 0px;
+    }
+
+    .burger-menu {
+        width:320px;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 0 0px 30px 2px grey;
+    }
+    
+    /* Хэдер*/
+   
+    
+    .burger-menu__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 86px;
+        padding: 0 24px;
+        }
+
+    .burger-menu__header button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+  
+    .header__logo {
+        width: 97px;
+        min-height: 51px;
+        position: absolute;
+        left: 80.73px;
+        top: 18.73px;
+}
+  
+
+    /* Основной контент */
+  
+    .burger-menu__nav-items {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 16px;
+    }
+        
+    .burger-menu__nav-item {
+        display: flex;
+        margin:0;
+        height:56px;
+    }
+    
+    .burger-menu__nav-item-button {
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0;
+        padding-left: 24px;
+        height: 24px;
+        background-color: white;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+
+    .burger-menu__nav-item_active {
+        color: #7e7e82;
+    }
+    
+    .burger-menu__nav-item_active::before {
+        content: "";
+        display: inline-block;
+        background-color: #41F6D7;
+        border-radius: 0 3px 3px 0;
+        height: 32px;
+        width: 4px;
+        position: relative;
+        left: -24px;
+        top: 8px;
+    }
+
+
+  /*Футтер*/
+  .burger-menu__footer-buttons {
+    margin-left:24px;
+  }
+
+  .burger-menu__footer-button { 
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    margin-right: 16px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.burger-menu__footer {
+    height: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;    
+}
+
+.burger-menu__footer-lang-items {
+    padding: 0;
+    align-items: center;
+    margin-left: 24px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.burger-menu__footer-lang-item {
+    border:none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    background-color: white;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.burger-menu__footer-lang-item_active .burger-menu__footer-lang-button {
+    color: #7e7e82; }
+
+.burger-menu__footer-lang-item:hover .burger-menu__footer-lang-button {
+    color: rgba(27, 28, 33, 0.5); }    
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.burger-menu__footer-phone {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    margin-left: 24px;
+}
+
+.burger-menu__footer-email {
+    margin-left: 24px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    margin-top: 16px;
+}
+
+.burger-menu__footer-lang-item_active {
+    color: #7e7e82;
+}
+
+.burger-menu__header button:hover {
+    opacity: 0.5;
+}
+
+.burger-menu__footer-button:hover
+{
+    transform: scale(1.5) rotate(360deg);
+    box-shadow: 0 0 5px 2px  #0f3046;
+}
+
+.burger-menu__nav-item a:hover {
+    text-transform: uppercase;
+    color:black;
+}
